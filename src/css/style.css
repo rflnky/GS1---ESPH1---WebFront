@@ -8,3 +8,24 @@
   --cor-card: #fff;
   --cor-footer: #04395e;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, sans-serif;
+  background: var(--cor-branco);
+  color: var(--cor-fonte);
+  min-height: 100vh;
+  transition: background 0.3s;
+}
+
+body.tema-azul {
+  background: #d0f1ff;
+}
+body.tema-verde {
+  background: #eaffea;
+}
+body.tema-branco {
+  background: #fff;
+}
