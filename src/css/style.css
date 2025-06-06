@@ -99,3 +99,33 @@ body.tema-branco {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
+tema-switcher {
+  display: flex;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.tema-switcher button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.tema-switcher button[data-tema="azul"] {
+  background: #d0f1ff;
+}
+.tema-switcher button[data-tema="verde"] {
+  background: #eaffea;
+}
+.tema-switcher button[data-tema="branco"] {
+  background: #fff;
+}
+
+.tema-switcher button:focus {
+  border: 2px solid var(--cor-destaque);
+}
