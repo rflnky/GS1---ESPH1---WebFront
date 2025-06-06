@@ -206,3 +206,60 @@ main {
   object-fit: cover;
   box-shadow: 0 4px 16px #0001;
 }
+
+p {
+  font-size: 1.06rem;
+  margin-bottom: 0.6rem;
+}
+
+.slideshow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cor-card);
+  border-radius: 13px;
+  box-shadow: 0 4px 16px #0001;
+  max-width: 410px;
+  margin: 1.3rem auto;
+  position: relative;
+  padding: 0.8rem 0;
+}
+
+.slides {
+  width: 320px;
+  height: 190px;
+  overflow: hidden;
+  display: flex;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slide.ativo {
+  display: block;
+}
+
+.slide-btn {
+  background: var(--cor-destaque);
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  margin: 0 5px;
+  opacity: 0.8;
+  transition: background 0.2s;
+}
+
+.slide-btn:hover {
+  background: var(--cor-azul);
+}
