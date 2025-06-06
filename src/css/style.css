@@ -129,3 +129,40 @@ tema-switcher {
 .tema-switcher button:focus {
   border: 2px solid var(--cor-destaque);
 }
+.navbar-center {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 2.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-menu li {
+  white-space: nowrap;
+}
+
+.navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.09rem;
+  transition: background 0.2s, color 0.2s;
+  border-radius: 6px;
+  padding: 0.38rem 0.95rem;
+  display: inline-block;
+}
+
+.navbar-menu li a.active,
+.navbar-menu li a:hover {
+  background: var(--cor-destaque);
+  color: var(--cor-fonte);
+}
