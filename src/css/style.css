@@ -381,3 +381,93 @@ form button:hover {
   background: var(--cor-azul);
   color: #fff;
 }
+
+footer {
+  background: var(--cor-footer);
+  color: #fff;
+  text-align: center;
+  padding: 1.1rem 0;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1100px) {
+  .navbar-menu {
+    gap: 1.1rem;
+  }
+  .navbar-logo {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .conteudo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.1rem;
+    padding: 1.2rem;
+  }
+  .conteudo img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar-menu {
+    flex-direction: column;
+    gap: 0.2rem;
+    display: none;
+    position: absolute;
+    top: 54px;
+    left: 0;
+    right: 0;
+    background: var(--cor-azul);
+    border-radius: 0 0 10px 10px;
+    padding: 0.7rem 0.5rem;
+    z-index: 99;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .navbar-menu.ativo {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .slides {
+    width: 99vw;
+    height: 130px;
+  }
+
+  form,
+  #quizBox {
+    max-width: 98vw;
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .conteudo {
+    padding: 1rem 0.3rem;
+  }
+
+  .slideshow {
+    max-width: 95vw;
+    padding: 0;
+  }
+
+  .slide-btn {
+    position: absolute;
+  }
+
+  .slide-btn.prev {
+    left: 5px;
+  }
+
+  .slide-btn.next {
+    right: 5px;
+  }
+}
