@@ -30,6 +30,13 @@ body.tema-branco {
   background: #fff;
 }
 
+header {
+  background: var(--cor-azul);
+  box-shadow: 0 2px 12px #0002;
+  width: 100%;
+  padding: 0;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -68,17 +75,6 @@ body.tema-branco {
   position: relative;
 }
 
-.navbar-toggle span {
-  display: block;
-  width: 28px;
-  height: 4px;
-  margin: 4px 0;
-  background: #fff;
-  border-radius: 2px;
-  transition: all 0.33s cubic-bezier(0.77, 0, 0.18, 1);
-  position: relative;
-}
-
 .navbar-toggle.ativo span:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
@@ -100,7 +96,7 @@ body.tema-branco {
   flex-shrink: 0;
 }
 
-tema-switcher {
+.tema-switcher {
   display: flex;
   gap: 14px;
   flex-shrink: 0;
@@ -129,6 +125,7 @@ tema-switcher {
 .tema-switcher button:focus {
   border: 2px solid var(--cor-destaque);
 }
+
 .navbar-center {
   flex: 1 1 100%;
   display: flex;
