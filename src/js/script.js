@@ -226,9 +226,9 @@ function mostrarQuiz() {
       btn.onclick = () => responderQuiz(btn.textContent, btn);
     });
   } else {
-    quizBox.innerHTML = "";
+    quizBox.innerHTML = `<p style="text-align:center; font-size:1.1rem; color: var(--cor-azul); font-weight: bold;">Parabéns! Você terminou o quiz.<br>Acertos: ${quizScore} de ${quizzes[quizTipo].length}</p>`;
     quizNext.style.display = "none";
-    quizResultado.textContent = `Quiz concluído! Você acertou ${quizScore} de ${quizzes[quizTipo].length} perguntas.`;
+    quizResultado.textContent = "";
     quizIdx = 0;
     quizScore = 0;
   }
